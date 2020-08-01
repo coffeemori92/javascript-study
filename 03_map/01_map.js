@@ -33,3 +33,19 @@ let filters2 = new Map()
   .set('크기', '대형견')
   .set('색상', '갈색');
 console.log(filters2.get('크기'));
+
+let filters3 = new Map([
+  ['견종', '래브라도리트리버'],
+  ['크기', '대형견'],
+  ['색상', '갈색'],
+]);
+console.log(filters3.get('견종'));
+
+let errors = new Map([
+  [100, '이름이 잘못되었습니다.'],
+  [110, '이름에는 문자만 입력할 수 있습니다.'],
+  [200, '색상이 잘못되었습니다.'],
+]);
+
+console.log(errors.get(100));
+console.log(errors.keys());
